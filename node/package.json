@@ -1,0 +1,25 @@
+{
+  "name": "arduino-monitor",
+  "version": "0.0.1",
+  "main": "./src/app.ts",
+  "bin": {
+    "mirodeck-switcher": "./dist/app.js"
+  },
+  "scripts": {
+    "build": "npx tsc",
+    "monitor": "ts-node ./src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matt Turner <matt@fiverings.uk>",
+  "license": "ISC",
+  "description": "Connects to Arduino via serial",
+  "dependencies": {
+    "serialport": "^12.0.0",
+    "ts-node": "^10.9.2",
+    "tslog": "^4.9.3",
+    "typescript": "^5.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.6.1"
+  }
+}
